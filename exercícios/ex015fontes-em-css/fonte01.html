@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em Css</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*medidas absolutas
+            cm, mm, in, px, pt(ponto), pc(paica)
+            16px-tamanho padrão da fonte 
+
+            medidas relativas
+            em(medida da altura do M maiusculo), ex(medida da altura do x minusculo),
+            rem(altura relativa a fonte configurada no body), vw (viewwidth-largura da viewport(tela)),
+            vh(altura da viewport), %
+            16px geralmente é 1em
+            32px = 2em, pois a medida dobra em relação a medida natural da fonte
+            px e em são as medidas oficiais segundo a w3c
+            */
+            font-size: 1em;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            /* shorthand é como colocar varias declarações em uma única linha
+            font-style -> font-weight -> font-size -> font-family*/
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        h2 {
+            font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalando com fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi quo ea laboriosam labore quisquam, maiores ex nostrum distinctio hic consectetur doloribus commodi quam eos excepturi iure iusto dolorem quia ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus similique pariatur nisi minus vero nostrum, amet, cum exercitationem enim nulla libero architecto iusto voluptas laudantium ipsam iure, non expedita. Aliquid!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem sed repellat cupiditate itaque recusandae! Cupiditate asperiores fugit ducimus, totam in ex obcaecati magnam laudantium id blanditiis molestias eveniet accusantium expedita!</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus soluta vel laborum, rem asperiores excepturi harum quos, explicabo non doloribus quia quae officiis exercitationem in distinctio ut veritatis incidunt error?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis autem sint minima explicabo libero itaque odit. Eaque culpa ab illo voluptate perferendis obcaecati deserunt! Numquam quae corrupti culpa tempore sequi.</p>
+</body>
+</html>
