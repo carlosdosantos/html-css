@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <!--justify-content = vai alinhar o conteúdo/items dentro do eixo principal
+    align-items = vai alinhar os items dentro do eixo transversal
+    justify-content = vai alinhar os elementos do eixo transversal mas só quando eles estão empacotados
+    align-content = é pra quando vc estiver com o wrap ligado-->
+    <style>
+        div.container{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+            align-content: space-around;
+            height: 400px;
+        }
+
+        div.item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">h</div>
+        <div class="item">i</div>
+        <div class="item">j</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+</body>
+</html>
