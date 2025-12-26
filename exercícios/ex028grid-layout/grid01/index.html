@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <!--align-items/align-content = serve apenas para alinhar o conteúdo que está na vertical-row
+    justify-items/justify-content = serve para alinhar apenas o conteúdo que está na horizontal-column
+    shortcuts-------
+    place-items: stretch center; = substitui align e justify-items
+    place-content: start end; = substitu align e justify-content
+    grid-template: 100px 100px 100px / auto auto auto; = substitui grid-template row/column (row primeiro)
+    função repeat()-------
+    grid-template-columns: repeat (3, auto); vai repetir o auto 3 vezes, nesse caso
+    grid-template-rows: repeat(3, 100px); vai repetir o valor 3 vezes
+    shortcut----- grid-template: repeat(3, 100px) / repeat(3, auto);
+    fraction-------
+    melhora a divisão do grid-template-columns...exemplo- se você tem um container de 1500px e quer dividir em três partes iguais coloca 1fr 1fr 1fr no lugar de auto auto auto, pois se depois você quiser aumentar ou diminuir, consegue fazer de maneira mais simples-->
+    <style>
+        div.container{
+            border: 3px solid blue;
+            display: grid;
+            height: 250px;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            gap: 5px;
+            align-items: normal;
+            justify-items: normal;
+            align-content: normal;
+            justify-content: normal;
+        }
+
+        div.item{
+            border: 3px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+    </div>
+</body>
+</html>
