@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <!--Elemento Pai - só serve para o elemento pai
+    display: flex;
+    flex-direction: row (esquerda para direita) (reverse), column (cima para baixo) (reverse)
+    flex-wrap: nowrap - não quebra o conteúdo, ele se adapta diminuindo, a não ser se for muito grande aí nao tem o que fazer..... - wrap ele quebra para o sentido do eixo que atravessa.... - wrap-reverse quebra para o sentido oposto do eixo que atravessa
+    flex-flow - é um shorthand de flex-direction, e flex-wrap - nessa ordem
+    Elemento Filho - só serve para o filho 
+    flex: auto; -->
+    <style>
+        div.container{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div>
+</body>
+</html>
