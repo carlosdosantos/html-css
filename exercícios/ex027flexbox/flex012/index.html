@@ -26,9 +26,19 @@
         }
         
         div#cxA{/*
-            flex-shrink: 0;
-            flex-grow: 1;
-            flex-basis: 2000px;*/
+            flex-shrink: 1;
+            flex-grow: 0;
+            flex-basis: auto;
+
+            flex: 0 1 auto
+            flex: initial;
+            acima é uma configuração padrão muito utilizada e no caso das shorthands significa a mesma coisa...
+            
+            flex: 0 0 auto ou none; é um elemento nada flexível
+            
+            flex: 1 1 auto ou auto; é o contrário do de cima, pois esse é o máximo de flexibilidade que um elemento pode ter..
+            
+            flex: 3; sozinho significa que os outros dois (shrink e basis) tem o seu valor como padrão no caso completo ficaria -- flex: 3 1 auto*/
 
             flex: 1 0 200px;
         }
