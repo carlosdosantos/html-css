@@ -1,4 +1,4 @@
-/*shortcuts-----
+/*shorthands-----
 grid-row-start/end --- grid-row
 grid-column-start/end--- grid-column
 span--- expande a linha ou coluna até onde precisa -- (exemplo grid-column: 1 / span 5; quer dizer, que vai da linha da coluna até a linha da coluna 6 expandindo em 5 items)
