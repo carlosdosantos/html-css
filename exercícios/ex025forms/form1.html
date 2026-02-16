@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <!--Get - é usado para quando NÃO for para dados sensíveis tipo nome, peso... e também para que ela vire uma URL compartilhável (podendo editar ela e compartilhar),, e usar ele se o tamanho total dele for até 3mil caracteres
+    POST - é usado para dados sensíveis como senha, dados de cartão, foto, o protocolo tem que ser o 'HTTPS'-->
+    <!--Diferença entre name e id
+    name - é usado para arquivos html e php
+    id - é usado para JS e uso para relacionar de labels com o texto escrito antes dele-->
+    <form method="" action="cadastro.php" autocomplete="off">
+        <p><label for="inome">Nome: </label> 
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p><label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
